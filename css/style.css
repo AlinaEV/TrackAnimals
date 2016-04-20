@@ -1,0 +1,229 @@
+/* GENERAL STYLES */
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Architects Daughter'), local('ArchitectsDaughter'), url(https://fonts.gstatic.com/s/architectsdaughter/v6/RXTgOOQ9AAtaVOHxx0IUBM3t7GjCYufj5TXV5VnA2p8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+html{
+	background-color: black;
+}
+body {
+	font-family: Arial, San-Serif;
+	font-size: 100%;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-size: 13px;
+	line-height: 1.3em;
+}
+
+header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  background: #cf2e7b url(../images/header-bg.jpg) 0 0 repeat-x;
+  border-bottom: solid 1px #275da1;
+  text-align: center;
+}
+
+header h1 {
+  width: 540px;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  font-size: 72px;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: -1px;
+
+}
+
+header h2 {
+  width: 540px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #9ddcff;
+  letter-spacing: 0;
+}
+
+header img{
+	display: inline-block;
+	width: 25%;
+	position: absolute;
+	
+	float: left;
+	box-sizing: border-box;
+	border: 1px solid #959595;
+	right: 5%;
+	top: 72px;
+  	
+  	margin: 50px;
+}
+
+/* NAVIGATION */
+.page-navigation {
+	background-color: #2e7bcf;
+	border-color: #101010;
+	min-height: 64px;
+}
+.page-navigation li {
+	float: left;
+	width: 100px;
+}
+.page-navigation a {
+	display: block;
+	color: #fff;
+	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+	line-height: 4em;
+	font-weight: bold;
+	text-align: center;
+}
+.page-navigation li a:hover {
+	color: yellowgreen;
+	background-color: black;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+/* LOGIN FORM */
+.login {
+	padding: 15px 0;
+	float: right;
+}
+.login input[type="text"],
+.login input[type="password"] {
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+.login input[type="submit"] {
+	padding: 5px 15px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+.login input[type="submit"]:hover,
+button:hover {
+	background-color: darkgrey;
+	color: white;
+}
+
+/* HEADER */
+.header {
+	padding: 50px 0;
+	background-color: #cf2e7b;
+}
+.header h1,
+.header h2 {
+	text-align: center;
+}
+
+/* MAIN PART */
+.collections {
+	overflow: auto;
+}
+.collection-title {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #777;
+	font-size: 36px;
+}
+.collection-title small {
+	color: #777;
+	font-size: 70%;
+}
+.collection-item-outer {
+	display: inline-block;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+.collections > div:first-child {
+	padding-left: 0;
+	padding-right: 10px;
+}
+.collections > div:last-child {
+	padding-right: 0;
+	padding-left: 10px;
+}
+.collection-item {
+	border: 1px solid #959595;
+}
+
+}
+.collection-text {
+	padding: 0 20px 20px 20px;
+
+}
+.collection-text h3 {
+	color: yellowgreen;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.collection-text p {
+	height: 80px;
+	overflow: hidden;
+	width: 540px;
+	text-align: justify;
+}
+.collection-text button {
+	padding: 10px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	outline: none;
+}
+
+/* FOOTER */
+.footer {
+	background-color: yellowgreen;
+	color: white;
+	padding: 20px 0;
+	margin-top: 0px;
+	font-family: 'Architects Daughter';
+}
+a.button {
+  width: 134px;
+  height: 58px;
+  padding-left: 68px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 23px;
+  line-height: 1.2;
+  color: #fff;
+}
+a.button small {
+  display: block;
+  font-size: 11px;
+}
+footer a.button {
+  position: absolute;
+  right: 0;
+  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
+aside a.button {
+  display: block;
+  width: 138px;
+  padding-left: 64px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+}
