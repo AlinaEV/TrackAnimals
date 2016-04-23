@@ -1,0 +1,120 @@
+/* GENERAL STYLES */
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Architects Daughter'), local('ArchitectsDaughter'), url(https://fonts.gstatic.com/s/architectsdaughter/v6/RXTgOOQ9AAtaVOHxx0IUBM3t7GjCYufj5TXV5VnA2p8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+html{
+	background-color: black;
+}
+body {
+	font-family: Arial, San-Serif;
+	font-size: 100%;
+	background-color: white;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-size: 13px;
+	line-height: 1.3em;
+}
+
+/* NAVIGATION */
+.page-navigation {
+	background-color: #2e7bcf;
+	border-color: #101010;
+	min-height: 48px;
+}
+.page-navigation li {
+	float: left;
+	width: 100px;
+}
+.page-navigation a {
+	display: block;
+	color: #fff;
+	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+	line-height: 3em;
+	font-weight: bold;
+	text-align: center;
+}
+.page-navigation li a:hover {
+	color: yellowgreen;
+	background-color: black;
+}
+
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/* LOGIN FORM */
+.login {
+	padding: 10px 0;
+	float: right;
+}
+.login input[type="text"],
+.login input[type="password"] {
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+.login input[type="submit"] {
+	padding: 5px 15px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+.login input[type="submit"]:hover,
+button:hover {
+	background-color: darkgrey;
+	color: white;
+}
+
+
+/* FOOTER */
+.footer {
+	background-color: yellowgreen;
+	color: white;
+	padding: 5px 0!important;
+	margin-top: 0px!important;
+	font-family: 'Architects Daughter';
+	position: relative!important;
+	top: 1vh!important;
+}
+a.button {
+  width: 134px!important;
+  height: 58px!important;
+  padding-left: 68px!important;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif!important;
+  font-size: 23px!important;
+  line-height: 1.2!important;
+  color: #fff;
+}
+a.button small {
+  display: block!important;
+  font-size: 11px!important;
+}
+footer a.button {
+  position: absolute!important;
+  right: 0!important;
+  background: transparent url(../images/github-button.png) 0 0 no-repeat!important;
+}
+aside a.button {
+  display: block!important;
+  width: 138px!important;
+  padding-left: 64px!important;
+  margin-bottom: 20px!important;
+  font-size: 21px!important;
+  background: transparent url(../images/download-button.png) 0 0 no-repeat!important;
+}
