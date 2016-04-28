@@ -1,93 +1,17 @@
-/* GENERAL STYLES */
-@font-face {
-  font-family: 'Architects Daughter';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Architects Daughter'), local('ArchitectsDaughter'), url(https://fonts.gstatic.com/s/architectsdaughter/v6/RXTgOOQ9AAtaVOHxx0IUBM3t7GjCYufj5TXV5VnA2p8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-html{
-	background-color: black;
-}
-body {
-	font-family: Arial, San-Serif;
-	font-size: 100%;
-	background-color: white;
-}
-ul {
-	margin: 0;
-	padding: 0;
-}
-ul li {
-	list-style-type: none;
-}
-a {
-	text-decoration: none;
-}
-p {
-	font-size: 13px;
-	line-height: 1.3em;
-}
-
-/* NAVIGATION */
-.page-navigation {
-	background-color: #2e7bcf;
-	border-color: #101010;
-	min-height: 64px;
-}
-.page-navigation li {
-	float: left;
-	width: 100px;
-}
-.page-navigation a {
-	display: block;
-	color: #fff;
-	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-	line-height: 4em;
-	font-weight: bold;
-	text-align: center;
-}
-.page-navigation li a:hover {
-	color: yellowgreen;
-	background-color: black;
-}
-
-
-.container {
-	margin: 0 auto;
-	padding: 0 15px;
-}
-/* LOGIN FORM */
-.login {
-	padding: 15px 0;
-	float: right;
-}
-.login input[type="text"],
-.login input[type="password"] {
-	padding: 5px;
-	margin-right: 5px;
-	border: 1px solid transparent;
-	border-radius: 5px;
-	outline: none;
-}
-.login input[type="submit"] {
-	padding: 5px 15px;
-	border: 1px solid lightgrey;
-	border-radius: 5px;
-}
-.login input[type="submit"]:hover,
-button:hover {
-	background-color: darkgrey;
-	color: white;
-}
-
 /* MAIN */
+#map {
+    /*margin-bottom: 1vh;*/
+    width: 69vw;
+    height: 79vh;
+      			  			
+}
 #dev{
 	text-align: center;
 	font-size: 20px;
 }
 .collections {
 	overflow: auto;
+	padding-top: 1vh;
 }
 .collection-title {
 	padding-bottom: 5px;
@@ -103,8 +27,10 @@ button:hover {
 	float: left;
 	padding-left: 5px;
 	padding-right: 5px;
-	width: 30%;
+	width: 25%;
 	box-sizing: border-box;
+	border: 1px solid #959595;
+
 }
 .map{
 	display: inline-block;
@@ -122,13 +48,7 @@ button:hover {
 	padding-right: 0;
 	padding-left: 10px;
 }
-.collection-item {
-	border: 1px solid #959595;
-}
-.collection-item img,
-.collection-item video {
-	width: 100%;
-}
+
 .collection-text {
 	padding: 0 20px 20px 20px;
 }
@@ -149,37 +69,11 @@ button:hover {
 	outline: none;
 }
 
-/* FOOTER */
-.footer {
-	background-color: yellowgreen;
-	color: white;
-	padding: 20px 0;
-	margin-top: 0px;
-	font-family: 'Architects Daughter';
+ul li {
+	list-style-type: none!important;
 }
-a.button {
-  width: 134px;
-  height: 58px;
-  padding-left: 68px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 23px;
-  line-height: 1.2;
-  color: #fff;
+ol li {
+	list-style-type: decimal!important;
 }
-a.button small {
-  display: block;
-  font-size: 11px;
-}
-footer a.button {
-  position: absolute;
-  right: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
-}
-aside a.button {
-  display: block;
-  width: 138px;
-  padding-left: 64px;
-  margin-bottom: 20px;
-  font-size: 21px;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
-}
+
+

@@ -214,6 +214,8 @@ var GMaps = (function(global) {
         panControl = valueOrDefault(options.panControl, true),
         mapTypeControl = valueOrDefault(options.mapTypeControl, true),
         scaleControl = valueOrDefault(options.scaleControl, true),
+
+        fullscreenControl = valueOrDefault(options.fullscreenControl, true),//
         streetViewControl = valueOrDefault(options.streetViewControl, true),
         overviewMapControl = valueOrDefault(overviewMapControl, true),
         map_options = {},
@@ -231,6 +233,8 @@ var GMaps = (function(global) {
           },
           mapTypeControl: mapTypeControl,
           scaleControl: scaleControl,
+
+          fullscreenControl: fullscreenControl,//
           streetViewControl: streetViewControl,
           overviewMapControl: overviewMapControl
         };
