@@ -8,11 +8,10 @@
 	    <!-- Включает масштабирование на мобильных устройствах -->
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- <script src="https://code.jquery.com/jquery.min.js"></script> -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
 	    <script type="text/javascript" src="js/map.js"></script>
 		<script src="http://maps.google.com/maps/api/js"></script>
-  		<script type="text/javascript" src="map/hpneo-gmaps-648f15a/gmaps.js"></script>
+  		<script src="map/hpneo-gmaps-648f15a/gmaps.js"></script>
+  		<!-- <script type="text/javascript" src="js/dropdown.js"></script> -->
   		<!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	    <!-- 3. Подключаем скомпилированный и минимизированный файл JavaScript платформы Bootstrap 3 -->
@@ -20,9 +19,10 @@
   		<!-- <script type="text/javascript" src="js/dropdown.js"></script> -->
   		  		
   		<!-- 1. Подключаем скомпилированный файл CSS Bootstrap 3 -->
-	    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">	
+  		
 
-		<link rel="stylesheet" type="text/css" href="css/map.css">
+		<link rel="stylesheet" type="text/css" href="css/archive.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
 
 
@@ -31,7 +31,10 @@
 	</head>
 	<body>
 		<!-- NAVIGATION -->
-		
+		<!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <!-- 3. Подключаем скомпилированный и минимизированный файл JavaScript платформы Bootstrap 3 -->
+	    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 		<nav id="myNav" class="page-navigation1">
 			<div class="container">
@@ -43,6 +46,11 @@
 				</ul>
 
 				<!-- LOGIN FORM -->
+				<!-- <form action="#" class="login">
+					<input type="text" placeholder="Login" required>
+					<input type="password" placeholder="Password" required>
+					<input type="submit" value="Sign In">
+				</form> -->
 				<!-- <form action="#" class="login">
 					<input type="text" placeholder="Login" required>
 					<input type="password" placeholder="Password" required>
@@ -65,70 +73,26 @@
 		<div class="container">
 			<!-- <h2 class="collection-title">Find your device <small>Visualize Quality</small></h2> -->
 			<div class="collections">
-				<div class="collection-item-outer"><h3 id="dev">Пристрої:</h3>
+				<div class="collection-item-outer">
+					<form>
+   
+   <p><h3>Пристрій:</h3><select name="hero">
+    <option value="s1">Кіт1</option>
+    <option value="s2" selected>Кіт2</option>
+    <option value="s3">Кіт3</option>
+    <option value="s3" label="Лариса">Крыса Лариса</option>
+   </select> 
+   <h3>Період:</h3>
+   <select name="hero">
+    <option value="s1">Кіт1</option>
+    <option value="s2" selected>Кіт2</option>
+    <option value="s3">Кіт3</option>
+    <option value="s3" label="Лариса">Крыса Лариса</option>
+   </select> 
+   <br><br><p class="blocktext"><input type="submit" value="ОК" class="btn btn-primary"></p></p>
+  </form> 
 
-						<div class="collection-text">
-							<ul class="c7 lst-kix_jrks0qagomgn-0 start">
-    							
-    							
-								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
-									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  <!-- border: 1px solid #959595 -->"><h3 style="display: inline">Кіт<label><b class="caret" style="color: yellowgreen"></b></h3></label></button>
-									
-    								<ul class="dropdown-menu">
-    									<li><a href="#">ID</a></li>
-    									<li><a href="#"> Name</a></li>
-    									<li><a href="#"> ON/OFF</a></li>
-    									<li><a href="#"> Frequency</a></li>
-    									<li><a href="#"> Geozone</a></li>
-									</ul>
-									</div>
-								</li>
-
-								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
-									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  <!-- border: 1px solid #959595 -->"><h3 style="display: inline">Кіт2<label><b class="caret" style="color: yellowgreen"></b></h3></label></button>
-									
-    								<ul class="dropdown-menu">
-    									<li><a href="#">ID</a></li>
-    									<li><a href="#"> Name</a></li>
-    									<li><a href="#"> ON/OFF</a></li>
-    									<li><a href="#"> Frequency</a></li>
-    									<li><a href="#"> Geozone</a></li>
-									</ul>
-									</div>
-								</li>
-								
-								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
-									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  <!-- border: 1px solid #959595 -->"><h3 style="display: inline">Пес<label><b class="caret" style="color: yellowgreen"></b></h3></label></button>
-									
-    								<ul class="dropdown-menu">
-    									<li><a href="#">ID</a></li>
-    									<li><a href="#"> Name</a></li>
-    									<li><a href="#"> ON/OFF</a></li>
-    									<li><a href="#"> Frequency</a></li>
-    									<li><a href="#"> Geozone</a></li>
-									</ul>
-									</div>
-								</li>
-								
-								<div class="dropdown"><input type="checkbox" value="">
-									 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><label> Cat        <b class="caret"></b></label>
-									</button>
-									<ul class="dropdown-menu">
-									 <li><a href="#">ID</a></li>
-									 <li><a href="#">Name</a></li>
-									 <li><a href="#">ON/OFF</a></li>
-									 <li><a href="#">Frequency</a></li>
-									 <li><a href="#">Geozone</a></li>
-									</ul>
-								</div>
-		
-
- 
-
-								
-							</ul>
-							
-						</div>
+						
 					
 				</div>
 				

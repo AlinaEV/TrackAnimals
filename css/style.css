@@ -1,32 +1,4 @@
 /* GENERAL STYLES */
-@font-face {
-  font-family: 'Architects Daughter';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Architects Daughter'), local('ArchitectsDaughter'), url(https://fonts.gstatic.com/s/architectsdaughter/v6/RXTgOOQ9AAtaVOHxx0IUBM3t7GjCYufj5TXV5VnA2p8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-html{
-	background-color: black;
-}
-body {
-	font-family: Arial, San-Serif;
-	font-size: 100%;
-}
-ul {
-	margin: 0;
-	padding: 0;
-}
-ul li {
-	list-style-type: none;
-}
-a {
-	text-decoration: none;
-}
-p {
-	font-size: 13px;
-	line-height: 1.3em;
-}
 
 header {
   padding-top: 40px;
@@ -75,7 +47,7 @@ header img{
 }
 
 /* NAVIGATION */
-.page-navigation {
+/*.page-navigation {
 	background-color: #2e7bcf;
 	border-color: #101010;
 	min-height: 64px;
@@ -101,9 +73,9 @@ header img{
 .container {
 	margin: 0 auto;
 	width: 960px;
-}
+}*/
 /* LOGIN FORM */
-.login {
+/*.login {
 	padding: 15px 0;
 	float: right;
 }
@@ -124,12 +96,13 @@ header img{
 button:hover {
 	background-color: darkgrey;
 	color: white;
-}
+}*/
 
 /* HEADER */
 .header {
 	padding: 50px 0;
 	background-color: #cf2e7b;
+	height: 81vh;
 }
 .header h1,
 .header h2 {
@@ -195,13 +168,9 @@ button:hover {
 
 /* FOOTER */
 .footer {
-	background-color: yellowgreen;
-	color: white;
-	padding: 20px 0;
-	margin-top: 0px;
-	font-family: 'Architects Daughter';
+	top: 0vh!important;
 }
-a.button {
+/*a.button {
   width: 134px;
   height: 58px;
   padding-left: 68px;
@@ -226,4 +195,4 @@ aside a.button {
   margin-bottom: 20px;
   font-size: 21px;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
-}
+}*/

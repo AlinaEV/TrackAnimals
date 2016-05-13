@@ -7,55 +7,71 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 html{
-	background-color: black;
+	background-color: black!important;
 }
 body {
-	font-family: Arial, San-Serif;
-	font-size: 100%;
-	background-color: white;
+	font-family: Arial, San-Serif!important;
+	font-size: 100%!important;
+	background-color: white!important;
+	border: 7px solid black;
 }
 ul {
-	margin: 0;
-	padding: 0;
+	margin: 0!important;
+	padding: 0!important;
 }
 ul li {
-	list-style-type: none;
+	list-style-type: none!important;
 }
 a {
-	text-decoration: none;
+	text-decoration: none!important; 
 }
 p {
-	font-size: 13px;
-	line-height: 1.3em;
+	font-size: 13px!important;
+	line-height: 1.3em!important;
 }
 
 /* NAVIGATION */
-.page-navigation {
-	background-color: #2e7bcf;
-	border-color: #101010;
-	min-height: 48px;
+.page-navigation1 {
+	background-color: #2e7bcf!important;
+	border-color: #101010!important;
+	min-height: 48px!important;
+	position: relative!important;
+	font-size: 15px!important;
 }
-.page-navigation li {
-	float: left;
-	width: 100px;
+.page-navigation1 li {
+	float: left!important;
+	width: 10vw!important;
+	
 }
-.page-navigation a {
-	display: block;
-	color: #fff;
-	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-	line-height: 3em;
-	font-weight: bold;
-	text-align: center;
+.page-navigation1 ul {
+	position: absolute!important;
+    top: 50%!important;
+    transform: 			translateY(-50%)!important;
+    }
+.page-navigation1 a {
+	display: block!important;
+	color: #fff!important;
+	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif!important;
+	line-height: 48px!important;
+	font-weight: bold!important;
+	text-align: center!important;
 }
-.page-navigation li a:hover {
-	color: yellowgreen;
-	background-color: black;
+.page-navigation1 li a:hover {
+	color: yellowgreen!important;
+	background-color: black!important;
 }
 
+.loginout{
+	display: inline-flex;
+	position: absolute;
+	right: 0!important;
+    top: 50%!important;
+    transform: 			translateY(-50%)!important;
+}
 
 .container {
-	margin: 0 auto;
-	padding: 0 15px;
+	margin: 0 auto!important;
+	padding: 0 15px!important;
 }
 /* LOGIN FORM */
 .login {
@@ -86,18 +102,20 @@ button:hover {
 .footer {
 	background-color: yellowgreen;
 	color: white;
-	padding: 5px 0!important;
+	padding: 10px 0!important;
 	margin-top: 0px!important;
 	font-family: 'Architects Daughter';
 	position: relative!important;
-	top: 1vh!important;
+	top: 1vh;
+	text-align: center
 }
+
 a.button {
-  width: 134px!important;
-  height: 58px!important;
-  padding-left: 68px!important;
+  width: 134px;
+  height: 45px;
+  /*padding-left: 60px!important;*/
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif!important;
-  font-size: 23px!important;
+  font-size: 20px!important;
   line-height: 1.2!important;
   color: #fff;
 }
@@ -109,12 +127,15 @@ footer a.button {
   position: absolute!important;
   right: 0!important;
   background: transparent url(../images/github-button.png) 0 0 no-repeat!important;
+  top: 50%!important;
+    transform: 			translateY(-50%)!important;
+    text-align: center;
 }
 aside a.button {
   display: block!important;
   width: 138px!important;
-  padding-left: 64px!important;
-  margin-bottom: 20px!important;
+  /*padding-left: 64px!important;*/
+  /*margin-bottom: 20px!important;*/
   font-size: 21px!important;
   background: transparent url(../images/download-button.png) 0 0 no-repeat!important;
 }

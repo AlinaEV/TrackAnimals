@@ -3,26 +3,40 @@
 	<head>
 		<title>GPS-tracker</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
 		<script type="text/javascript" src="script/js.js"></script>
+		<!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <!-- 3. Подключаем скомпилированный и минимизированный файл JavaScript платформы Bootstrap 3 -->
+	    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  		<!-- <script type="text/javascript" src="js/dropdown.js"></script> -->
+  		  		
+  		<!-- 1. Подключаем скомпилированный файл CSS Bootstrap 3 -->
+	    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <link rel="stylesheet" type="text/css" href="css/menu.css">
 	</head>
 	<body>
 		<!-- NAVIGATION -->
-		<nav class="page-navigation">
+		<nav class="page-navigation1">
 			<div class="container">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="map.html">Map</a></li>
-					<li><a href="#">Archive</a></li>
+					<li><a href="archive.html">Archive</a></li>
 					<li><a href="#">Help</a></li>
 				</ul>
 
 				<!-- LOGIN FORM -->
-				<form action="#" class="login">
+				<!-- <form action="#" class="login">
 					<input type="text" placeholder="Login" required>
 					<input type="password" placeholder="Password" required>
 					<input type="submit" value="Sign In">
-				</form>
+				</form> -->
+				<p class='loginout'>
+				<button type="button" class="btn btn-primary navbar-btn">Sign in</button>
+				<button type="button" class="btn btn-primary navbar-btn">Log in</button></p>
 				<!-- /LOGIN FORM -->
 			</div>
 		</nav>
@@ -46,7 +60,7 @@
 							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-							<button onclick="showText(this)">Read More...</button>
+							<button onclick="showText(this)" class='btn-primary'>Read More...</button>
 				</div>		
 			</div>
 		</header>
