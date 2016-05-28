@@ -15,7 +15,7 @@ html{
 	background-color: black!important;
 }
 body {
-	font-family: Arial, San-Serif!important;
+	font-family: 'Comfortaa', cursive, Arial!important;
 	font-size: 100%!important;
 	background-color: white!important;
 	border: 7px solid black;
@@ -109,7 +109,7 @@ button:hover {
 	color: white;
 	padding: 10px 0!important;
 	margin-top: 0px!important;
-	font-family: 'Architects Daughter';
+	font-family: 'Architects Daughter'!important;
 	position: relative!important;
 	top: 1vh;
 	text-align: center
@@ -119,7 +119,7 @@ a.button {
   width: 134px;
   height: 45px;
   /*padding-left: 60px!important;*/
-  font-family: 'Comfortaa', cursive, 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif!important;
+  font-family: 'Comfortaa', cursive, 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial!important;
   font-size: 20px!important;
   line-height: 1.2!important;
   color: #fff;

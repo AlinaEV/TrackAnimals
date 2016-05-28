@@ -4,8 +4,8 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: 'Comfortaa', cursive, 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  background: #cf2e7b url(../images/footprint1.jpg) right bottom repeat-x;
-  background: #cf2e7b url(../images/footprint2.jpg) 0 0 repeat-x;
+  background: #fff url(../images/footprint1.jpg) right bottom repeat-x;
+  background: #fff url(../images/footprint2.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
   text-align: center;
   background-size: 4%;
@@ -18,7 +18,7 @@ header h1 {
   font-size: 72px;
   font-weight: normal;
   line-height: 1;
-  color: #fff;
+  color: #cf2e7b;
   letter-spacing: -1px;
 
 }
@@ -40,7 +40,7 @@ header img{
 	position: absolute;
 	
 	box-sizing: border-box;
-	border: 1px solid #959595;
+	border: 0px solid #959595;
 	/*top: 72px;*/
   	
   	/*margin-top: 40px;*/
@@ -114,7 +114,7 @@ button:hover {
 /* HEADER */
 .header {
 	padding: 50px 0;
-	background-color: #cf2e7b;
+	background-color: #fff;
 	height: 81vh;
 }
 .header h1,
