@@ -131,7 +131,7 @@ a.button small {
 footer a.button {
   position: absolute!important;
   right: 0!important;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat!important;
+  background: transparent url(../images/github-button.pn) 0 0 no-repeat!important;
   top: 50%!important;
     transform: 			translateY(-50%)!important;
     text-align: center;

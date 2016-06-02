@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GPS-трекер</title>
+		<meta charset="UTF-8">
+		
+		<script type="text/javascript" src="script.js"></script>
+		<!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <!-- 3. Подключаем скомпилированный и минимизированный файл JavaScript платформы Bootstrap 3 -->
+	    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  		<!-- <script type="text/javascript" src="js/dropdown.js"></script> -->
+  		  		
+  		<!-- 1. Подключаем скомпилированный файл CSS Bootstrap 3 -->
+	    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'><!--font-->
+	    <link rel="stylesheet" type="text/css" href="css/map.css">
+	    <link rel="stylesheet" type="text/css" href="css/menu.css">
+	</head>
+	<body>
+		<!-- NAVIGATION -->
+		<nav class="page-navigation1">
+			<div class="container">
+				<ul>
+					<li><a href="index.html">Головна</a></li>
+					<li><a href="vet.html">Тварини</a></li>
+					<li><a href="#">Допомога</a></li>
+				</ul>
+
+				<p class='loginout'>
+				<button type="button" class="btn btn-primary navbar-btn btn-lg" href="#signin" data-toggle="modal" data-target=".bs-modal-sm">Профіль користувача</button>
+				</p>
+			</div>
+		</nav>
+		<!-- /NAVIGATION -->
+		
+	<div class="container">
+		<div class="collections">
+				<div class="collection-item-outer"><h3 id="dev">Пацієнти: </h3>
+
+						<div class="collection-text">
+							<h3 data-toggle="collapse" data-target="#demo1">Коти</h3>
+							<div id="demo1" class="collapse in">
+							<ul class="c7 lst-kix_jrks0qagomgn-0 start">
+    							
+    							
+								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
+									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  "><h3 style="display: inline">Кіт<label></h3></label></button>
+									
+    								
+									</div>
+								</li>
+
+								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
+									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  "><h3 style="display: inline">Кіт2<label></h3></label></button>
+									
+    								
+									</div>
+								</li>
+								
+								
+								
+		
+							</ul>
+							</div>
+
+
+
+							<h3 data-toggle="collapse" data-target="#demo2">Собаки</h3>
+							<div id="demo2" class="collapse in">
+							<ul class="c7 lst-kix_jrks0qagomgn-0 start">
+    							
+    							
+								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
+									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  <!-- border: 1px solid #959595 -->"><h3 style="display: inline">Пес<label></h3></label></button>
+									
+    								
+									</div>
+								</li>
+
+								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
+									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  <!-- border: 1px solid #959595 -->"><h3 style="display: inline">Пес2<label></h3></label></button>
+									
+    								
+									</div>
+								</li>
+								
+								
+							</ul>
+							</div>
+							<button type="button" class="btn btn-primary"><b> Додати групу </b></button>
+						</div>
+					
+				</div>
+<div class="map">
+				<h2 id='dev'>Стан здоров'я тварини</h2>
+				<table>
+						<div id="demo1" class="collapse in">
+							<ul class="">
+    							
+    							
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Власник: </h3></td>
+										<td><h4 style="display: inline">Ім'я та прізвище</h4>
+	    								
+										</td>
+									</div>
+								
+								</tr>
+								
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Адреса: </h3></td>
+										<td><h4 style="display: inline">Adress</h4>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Контактний телефон: </h3></td>
+										<td><h4 style="display: inline">80112234549</h4>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Кличка тварини: </h3></td>
+										<td><h4 style="display: inline">Бобік</h4></td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Вага тварини: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Вага" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Вік тварини: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Вік" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Стать тварини: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Пульс" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Порода тварини: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Пульс" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Пульс тварини: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Пульс" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Обсяг спожитої води: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Обсяг спожитої води" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Стан очей: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Стан очей" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Стан ротової порожнини: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Стан ротової порожнини" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Опис апетиту тварини: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Опис апетиту" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+								<tr>
+								<td><li></li></td><div>
+									  <td><h3 style="display: inline;">Лікарняний рецепт: </h3></td>
+										<td><form style="display: inline">
+	    								<ul style="display: inline">
+	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Pецепт" required></li>
+	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+										</ul>
+										</form>
+										</td>
+									</div>
+								
+								</tr>
+
+							</ul>
+							</div>
+				
+</table><h5><i>Відредаговано: 25.05.2016</i></h5></div>
+				</div>
+
+</div>		
+
+		
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<a href="https://github.com/" class="button"><small>View project on</small> GitHub</a>
+			<div class="container">
+				<p>Copyright © 2016 Alina&amp;Alyona Vityuk</p>
+			</div>
+		</footer>
+		<!-- /FOOTER -->
+		<!-- Modal -->
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  	<div class="modal-dialog modal-sm">
+    	<div class="modal-content">
+	        
+	        <div class="bs-example bs-example-tabs">
+	        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
+	            <ul id="myTab" class="nav nav-tabs">
+	              <li class="active"><a href="#persdata" data-toggle="tab">Персональні дані</a></li>
+	              <li class=""><a href="#contacts" data-toggle="tab">Контакти</a></li>
+	            </ul>
+	        </div>
+		    <div class="modal-body">
+		        <div id="myTabContent" class="tab-content">
+		        	
+		        	<div class="tab-pane fade active in" id="persdata">
+
+
+					    <form class="form-signin">
+					        <h2 class="form-signin-heading">Персональні дані</h2>
+								<label for="nameis" class="sr-only">Ім'я</label>
+						        <input type="text" id="nameis" class="form-control" placeholder="Ім'я" required autofocus>
+								<br/>
+						        <label for="surnameis" class="sr-only">Прізвище</label>
+						        <input type="text" id="surnameis" class="form-control" placeholder="Прізвище" required>
+								<br/>
+						        <label for="inputEmail" class="sr-only">Email адреса</label>
+						        <input type="email" id="inputEmail" class="form-control" placeholder="Email адреса" required >
+					        	<br/>
+						        <label for="inputPassword" class="sr-only">Пароль</label>
+						        <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+								<br/>
+					        
+					        <button class="btn btn-lg btn-primary btn-block" type="submit">Зберегти</button>
+					    </form>
+
+        			</div>
+				    
+      				<div class="tab-pane fade" id="contacts">
+			            <form class="form-horizontal">
+			            <fieldset>
+			            <h2 class="form-signin-heading">Контакти</h2>
+				            <label for="tel" class="sr-only">Телефон</label>
+							<input type="text" id="tel" class="form-control" placeholder="Телефон" required autofocus>
+									<br/>
+							<label for="adr" class="sr-only">Адреса</label>
+						    <input type="text" id="adr" class="form-control" placeholder="Адреса" required>
+								<br/>
+			            <div class="control-group">
+			              
+			              <hr>
+			              <div class="controls">
+			                <button id="confirmsignup" name="confirmsignup" class="btn btn-lg btn-primary btn-block" type="submit">Зберегти</button>
+			              </div>
+			            </div>
+			            </fieldset>
+			            </form>
+      				</div>
+    			</div>
+      		</div>
+      		
+    	</div>
+	</div>
+</div>
+
+	</body>
+</html>
