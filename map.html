@@ -246,5 +246,69 @@
 			</div>
 		</footer>
 		<!-- /FOOTER -->
+		<!-- Modal -->
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  	<div class="modal-dialog modal-sm">
+    	<div class="modal-content">
+	        
+	        <div class="bs-example bs-example-tabs">
+	        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
+	            <ul id="myTab" class="nav nav-tabs">
+	              <li class="active"><a href="#persdata" data-toggle="tab">Персональні дані</a></li>
+	              <li class=""><a href="#contacts" data-toggle="tab">Контакти</a></li>
+	            </ul>
+	        </div>
+		    <div class="modal-body">
+		        <div id="myTabContent" class="tab-content">
+		        	
+		        	<div class="tab-pane fade active in" id="persdata">
+
+
+					    <form class="form-signin">
+					        <h2 class="form-signin-heading">Персональні дані</h2>
+								<label for="nameis" class="sr-only">Ім'я</label>
+						        <input type="text" id="nameis" class="form-control" placeholder="Ім'я" required autofocus>
+								<br/>
+						        <label for="surnameis" class="sr-only">Прізвище</label>
+						        <input type="text" id="surnameis" class="form-control" placeholder="Прізвище" required>
+								<br/>
+						        <label for="inputEmail" class="sr-only">Email адреса</label>
+						        <input type="email" id="inputEmail" class="form-control" placeholder="Email адреса" required >
+					        	<br/>
+						        <label for="inputPassword" class="sr-only">Пароль</label>
+						        <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+								<br/>
+					        
+					        <button class="btn btn-lg btn-primary btn-block" type="submit">Зберегти</button>
+					    </form>
+
+        			</div>
+				    
+      				<div class="tab-pane fade" id="contacts">
+			            <form class="form-horizontal">
+			            <fieldset>
+			            <h2 class="form-signin-heading">Контакти</h2>
+				            <label for="tel" class="sr-only">Телефон</label>
+							<input type="text" id="tel" class="form-control" placeholder="Телефон" required autofocus>
+									<br/>
+							<label for="adr" class="sr-only">Адреса</label>
+						    <input type="text" id="adr" class="form-control" placeholder="Адреса" required>
+								<br/>
+			            <div class="control-group">
+			              
+			              <hr>
+			              <div class="controls">
+			                <button id="confirmsignup" name="confirmsignup" class="btn btn-lg btn-primary btn-block" type="submit">Зберегти</button>
+			              </div>
+			            </div>
+			            </fieldset>
+			            </form>
+      				</div>
+    			</div>
+      		</div>
+      		
+    	</div>
+	</div>
+</div>
 	</body>
 </html>
