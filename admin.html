@@ -23,9 +23,8 @@
 			<div class="container">
 				<ul>
 					<li><a href="index.html">Головна</a></li>
-					<li><a href="map.html">Мапа</a></li>
-					<li><a href="archive.html">Архів</a></li>
-					<li><a href="Medcard.html">Щоденник</a></li>
+					<li><a href="admin.html">Користувачі</a></li>
+					<li><a href="admin2.html">Пристрої</a></li>
 					<li><a href="about.html">Про програму</a></li>
 				</ul>
 
@@ -37,9 +36,8 @@
 				</form> -->
 				<p class='loginout'>
 				
-				<button type="button" class="btn btn-primary navbar-btn btn-lg" href="#signin" data-toggle="modal" data-target=".bs-modal-sm">Увійти / Зареєструватись</button>
-				<a href="#" class="language1">  &nbsp;   UA &nbsp;</a>
-				<a href="#" class="language2">&#124; &nbsp;EN &nbsp;</a>
+				<button type="button" class="btn btn-primary navbar-btn btn-lg" href="#signin" data-toggle="modal" data-target=".bs-modal-sm">Профіль користувача</button>
+				
 				
 				</p>
 				
@@ -51,29 +49,50 @@
 		<!-- HEADER -->
 		<header class="header">
 
-		<img id="img1" src="images/9_parrot.jpg" alt="picture" width="" height="">
-		<img id="img2" src="images/New.jpg" alt="picture" width="" height="">
+		<img id="img2" src="images/cat-walk.jpg" alt="picture" width="" height="">
+		
 			
-			<div class="collections">
+			<div class="collections tbl1" style="margin-left: 5%;">
 
-				<h1>Пет- монітор</h1>
 				<h2>
-					<small>Система моніторингу тварин</small>
+					Управління користувачами
 				</h2>
-				
+				<br/>
 
 				<div class="collection-text">
+
+					<table id="tab1">
+						<thead>
+							<tr>
+								<th><h3>ID</h3></th>
+								<th><h3>Ім'я<br>користувача</h3></th>
+								<th><h3>Email</h3></th>
+								<th><h3>Контактні<br>дані</h3></th>
+								<th><h3>Роль</h3></th>
+								<th><h3>Управління</h3></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Василь</td>
+								<td>vasya@gmail.com</td>
+								<td>моб. 0678855643</td>
+								<td>користувач</td>
+								<td>ВИДАЛИТИ</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Федір</td>
+								<td>fedya@gmail.com</td>
+								<td>моб. 0678855673</td>
+								<td>користувач</td>
+								<td>ВИДАЛИТИ</td>
+							</tr>
+						</tbody>
+						
+					</table>
 							
-							<p>Розроблена система моніторингу активності тварин дозволяє забезпечити 
-							оперативну реакцію власника на непередбачувані обставини, що можуть загрожувати
-							 здоров'ю чи життю тварини. Забезпечення функцій дистанційного спостереження 
-							 певних показників стану здоров'я тварини, що можуть надходити, як від 
-							 спеціаліста під час огляду, так і від власника тварини в будь-який час, 
-							 дозволяє створити додатковий зв'язок процесів збирання  і обробки даних, 
-							 що допомогає забезпечити ефективну і своєчасну взаємодію між власником 
-							 тварини та фахівцем ветеринарної клініки.
-							</p>
-							<button onclick="showText(this)" class='btn-primary'>Розгорнути...</button>
 				</div>		
 			</div>
 		</header>

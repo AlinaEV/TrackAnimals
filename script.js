@@ -7,3 +7,4 @@ function showText (el) {
 		el.innerHTML = "Розгорнути...";
 	}
 };
+

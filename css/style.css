@@ -129,7 +129,22 @@ button:hover {
     margin-right: 33.3%;
     width: 33.3vw;
 }
-
+.tbl1{
+	width: 60vw!important;
+}
+table {
+	border: 4px double black!important;
+	border-collapse: collapse!important;
+}
+th {
+    padding: 1.3vw; /* Поля в ячейках */
+    vertical-align: top; /* Выравнивание по верхнему краю ячеек */
+   	text-align: center;
+   	border: 1px solid black;
+   }
+td{
+	border: 1px solid black;
+}
 }
 .collection-text {
 	padding: 0 20px 20px 20px;

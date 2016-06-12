@@ -41,7 +41,7 @@
 					<li><a href="map.html">Мапа</a></li>
 					<li><a href="archive.html">Архів</a></li>
 					<li><a href="Medcard.html">Щоденник</a></li>
-					<li><a href="#">Допомога</a></li>
+					<li><a href="about.html">Про програму</a></li>
 				</ul>
 
 				<!-- LOGIN FORM -->
@@ -67,7 +67,7 @@
 		<div class="container">
 			<!-- <h2 class="collection-title">Find your device <small>Visualize Quality</small></h2> -->
 			<div class="collections">
-				<div class="collection-item-outer"><h3 id="dev">Мої улюбленці: <button type="button" class="btn btn-primary"><b> + </b></button></h3>
+				<div class="collection-item-outer"><h3 id="dev">Мої улюбленці: </button></h3>
 
 						<div class="collection-text">
 							<h3 data-toggle="collapse" data-target="#demo1">Коти</h3><!-- <button type="button" data-toggle="collapse" data-target="#demo">Згорнути</button> -->
@@ -124,7 +124,7 @@
 							<ul class="c7 lst-kix_jrks0qagomgn-0 start">
     							
     							
-								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
+								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value="" onchange="loadRoad()"></h3></label>
 									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  <!-- border: 1px solid #959595 -->"><h3 style="display: inline">Пес<label><b class="caret" style="color: yellowgreen"></b></h3></label></button>
 									
     								<ul class="dropdown-menu">
@@ -137,7 +137,7 @@
 									</div>
 								</li>
 
-								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value=""></h3></label>
+								<li><div class="dropdown"><label><h3 style="display: inline"><input type="checkbox" value="" onchange="loadMark()"></h3></label>
 									  <button data-toggle="dropdown" class="dropdown-toggle" style="background: white;  <!-- border: 1px solid #959595 -->"><h3 style="display: inline">Пес2<label><b class="caret" style="color: yellowgreen"></b></h3></label></button>
 									
     								<ul class="dropdown-menu">
@@ -153,77 +153,19 @@
 								
 							</ul>
 							</div>
-							<button type="button" class="btn btn-primary"><b> Додати групу </b></button>
+							<button type="button" class="btn btn-primary" ><b> Додати групу </b></button>
+							<script type="text/javascript">
+							
+
+							</script>
 						</div>
 					
 				</div>
 				
 					<div class="map">
-						<div id="map"></div>
+						<div id="map" ></div>
 						  <script>
-						    var map = new GMaps({
-						      el: '#map',
-						      lat: -12.043333,
-						      lng: -77.028333
-						    });
-						    map.addMarker({
-							  lat: -12.043333,
-							  lng: -77.028333,
-							  title: 'Cat1',
-							  click: function(e) {
-							    alert('You clicked in this marker');
-							  }
-							});
-							
-
-							path = [[-12.044012922866312, -77.02470665341184], [-12.05449279282314, -77.03024273281858], [-12.055122327623378, -77.03039293652341], [-12.075917129727586, -77.02764635449216], [-12.07635776902266, -77.02792530422971], [-12.076819390363665, -77.02893381481931], [-12.088527520066453, -77.0241058385925], [-12.090814532191756, -77.02271108990476]];
-
-							map.drawPolyline({
-							  path: path,
-							  strokeColor: '#131540',
-							  strokeOpacity: 0.6,
-							  strokeWeight: 6
-							});
-
-
-							var path = [[-12.040397656836609,-77.03373871559225], [-12.040248585302038,-77.03993927003302], [-12.050047116528843,-77.02448169303511],	[-12.044804866577001,-77.02154422636042]];
-
-							// polygon = map.drawPolygon({
-							//   paths: path, // pre-defined polygon shape
-							//   strokeColor: '#BBD8E9',
-							//   strokeOpacity: 1,
-							//   strokeWeight: 3,
-							//   fillColor: '#BBD8E9',
-							//   fillOpacity: 0.6
-							// });
-
-
-							map.addControl({
-						        position: 'top_center',
-						        content: 'Geolocate',
-						        style: {
-						          margin: '5px',
-						          padding: '1px 6px',
-						          border: 'solid 1px #717B87',
-						          background: '#fff'
-						        },
-						        events: {
-						          click: function(){
-						            GMaps.geolocate({
-						              success: function(position){
-						                map.setCenter(position.coords.latitude, position.coords.longitude);
-						              },
-						              error: function(error){
-						                alert('Geolocation failed: ' + error.message);
-						              },
-						              not_supported: function(){
-						                alert("Your browser does not support geolocation");
-						              }
-						            });
-						          }
-						        }
-						      });
-
+						    gmapff();
 							
 							
 						  </script>
@@ -239,10 +181,10 @@
 		<!-- /MAIN SECTION -->
 
 		<!-- FOOTER -->
-		<footer id="myAffix" class="footer">
-			<a href="https://github.com/AlinaEV/TrackAnimals.git" class="button"><small>View project on</small> GitHub</a>
+		<footer class="footer">
+			<a href="https://github.com/" class="button"><small>View project on</small> GitHub</a>
 			<div class="container">
-				<p>Copyright © 2016 Alina&amp;Alyona Vityuk</p>
+				<p>© 2016. Alina Vitiuk &amp; Alyona Vitiuk.</p>
 			</div>
 		</footer>
 		<!-- /FOOTER -->

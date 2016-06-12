@@ -19,6 +19,7 @@ body {
 	font-size: 100%!important;
 	background-color: white!important;
 	border: 7px solid black;
+	overflow-y: hidden;
 }
 ul {
 	margin: 0!important;
@@ -48,11 +49,33 @@ p {
 	width: 10vw!important;
 	
 }
+
+
+
 .page-navigation1 ul {
 	position: absolute!important;
     top: 50%!important;
     transform: 			translateY(-50%)!important;
     }
+
+.language1 a {
+    font-family: 'Oswald Regular',Tahoma,sans-serif;
+    text-decoration: none;
+    color: #fff!important;
+    opacity: .9!important;
+    font-size: 18px;
+    
+}
+.language2 a {
+    font-family: 'Oswald Regular',Tahoma,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative!important;
+    top: 50%!important;
+    transform: 			translateY(-50%)!important;
+}
+
 .page-navigation1 a {
 	display: block!important;
 	color: #fff!important;

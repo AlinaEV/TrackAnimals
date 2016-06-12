@@ -16,6 +16,42 @@
 	<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'><!--font-->
 	    <link rel="stylesheet" type="text/css" href="css/map.css">
 	    <link rel="stylesheet" type="text/css" href="css/menu.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script>
+$.fn.setCursorPosition = function(pos) {
+    this.each(function(index, elem) {
+    if (elem.setSelectionRange) {
+        elem.setSelectionRange(pos, pos);
+    } else if (elem.createTextRange) {
+        var range = elem.createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', pos);
+        range.moveStart('character', pos);
+        range.select();
+    }
+    });
+    return this;
+};
+$(document)
+       .ready(function () {
+           $("td")
+               .click(function () {
+                   var text =  $(this).html(),
+                       varX = $("<input/>", {
+                       "value": text,
+                       "click": function (event) {
+                           event.stopPropagation()
+                       },
+                       "blur": function () {
+                           $(this).parent().html($(this).val())
+                       }
+                   });
+                   $(this).html(varX);
+                   varX.setCursorPosition(text.length)
+               });
+       });
+  </script>
 	</head>
 	<body>
 		<!-- NAVIGATION -->
@@ -26,7 +62,7 @@
 					<li><a href="map.html">Мапа</a></li>
 					<li><a href="archive.html">Архів</a></li>
 					<li><a href="Medcard.html">Щоденник</a></li>
-					<li><a href="#">Допомога</a></li>
+					<li><a href="about.html">Про програму</a></li>
 				</ul>
 
 				<p class='loginout'>
@@ -94,8 +130,11 @@
 						</div>
 					
 				</div>
+				
+
+
 <div class="map">
-				<h3 id='dev'>Стан здоров'я тварини</h3>
+				<h3 id='dev'>Стан здоров'я тварини</h3><br/>
 				<table>
 						<div id="demo1" class="collapse in">
 							<ul class="">
@@ -103,11 +142,11 @@
     							
 								<tr>
 								<td><li></li></td><div>
-									  <td><h3 style="display: inline;">Ветеринар: </h3></td>
+									  <td><h3 style="display: inline;">В е т е р и н а р: </h3></td>
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Ім'я" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -121,7 +160,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Ім'я" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form></td>
 									</div>
@@ -134,7 +173,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Вага" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -148,7 +187,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Вік" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -162,7 +201,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Пульс" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -176,7 +215,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Пульс" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -190,7 +229,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Пульс" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -204,7 +243,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Обсяг спожитої води" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -218,7 +257,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Стан очей" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -232,7 +271,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Стан ротової порожнини" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -246,7 +285,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Опис апетиту" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -260,7 +299,7 @@
 										<td><form style="display: inline">
 	    								<ul style="display: inline">
 	    									<li style="display: inline"><input style="display: inline" type="text" id="vetname" placeholder="Pецепт" required></li>
-	    									<li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li>
+	    									<!-- <li style="display: inline"><button style="display: inline" class="btn btn-lg btn-primary" type="submit">Зберегти</button></li> -->
 										</ul>
 										</form>
 										</td>
@@ -269,9 +308,12 @@
 								</tr>
 
 							</ul>
+
 							</div>
 				
-</table><h5><i>Відредаговано: 25.05.2016</i></h5></div>
+</table><br/><button style="display: inline" class="btn btn-lg btn-primary" type="submit" >Зберегти</button><br/><br/>
+
+<h5><i>Відредаговано: 25.05.2016</i></h5></div>
 				</div>
 
 </div>		
